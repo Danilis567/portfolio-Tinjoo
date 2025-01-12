@@ -1,2 +1,1 @@
-# Simple Portfolio App
 
