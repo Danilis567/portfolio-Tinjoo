@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-family: "Heebo", serif;
+    font-optical-sizing: auto;
+}
+
+.custom-btn {
+    @apply text-white bg-primary text-xl rounded p-2 font-medium
+}
+
+.custom-link {
+    @apply text-dark hover:text-primary text-xl font-medium
+}
+
+.badge {
+    @apply text-white bg-blackDark text-base px-2 py-1 rounded-2xl font-bold
+}
+
+.badge_article {
+    @apply text-white bg-primary text-base px-2 py-1 rounded-2xl font-bold
+}
+
+.headling-1{
+    @apply text-dark text-3xl font-medium
+}
+
+.headling-2{
+    @apply text-dark text-2xl font-medium
+}
+
+.blog-body-text{
+    @apply text-dark text-base font-normal
+}
+
+.img{
+    @apply w-full h-auto
+}
