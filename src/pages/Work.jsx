@@ -6,12 +6,12 @@ export default function Work() {
   const worksPerPage = 4;
 
   const works = [
-    { img: "/rec.png", title: "Making a design system from scratch", date: "2020", category: "Design , Pattern", text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint." },
-    { img: "/rec-2.png", title: "Building a web app with React", date: "2021", category: "Web Development", text: "Velit officia consequat duis enim velit mollit." },
-    { img: "/rec-3.png", title: "UI/UX Design Trends", date: "2022", category: "Design", text: "Exercitation veniam consequat sunt nostrud amet." },
-    { img: "/rec-4.png", title: "Understanding JavaScript Closures", date: "2023", category: "Programming", text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint." },
-    { img: "/rec-4.png", title: "Introduction to GraphQL", date: "2020", category: "Backend", text: "Velit officia consequat duis enim velit mollit." },
-    { title: "CSS Grid vs Flexbox", date: "2021", category: "Design", text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint." },
+    { img: "https://i.hizliresim.com/qef3sie.png?_gl=1*1rmqpvx*_ga*MzQzNjc2MzQ2LjE3MzY2ODI2MDc.*_ga_M9ZRXYS2YN*MTczNjY4MjYwNi4xLjEuMTczNjY4Mjg2MS4yNy4wLjA.", title: "Making a design system from scratch", date: "2020", category: "Design , Pattern", text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint." },
+    { img: "https://i.hizliresim.com/qef3sie.png?_gl=1*1rmqpvx*_ga*MzQzNjc2MzQ2LjE3MzY2ODI2MDc.*_ga_M9ZRXYS2YN*MTczNjY4MjYwNi4xLjEuMTczNjY4Mjg2MS4yNy4wLjA.", title: "Building a web app with React", date: "2021", category: "Web Development", text: "Velit officia consequat duis enim velit mollit." },
+    { img: "https://i.hizliresim.com/qef3sie.png?_gl=1*1rmqpvx*_ga*MzQzNjc2MzQ2LjE3MzY2ODI2MDc.*_ga_M9ZRXYS2YN*MTczNjY4MjYwNi4xLjEuMTczNjY4Mjg2MS4yNy4wLjA.", title: "UI/UX Design Trends", date: "2022", category: "Design", text: "Exercitation veniam consequat sunt nostrud amet." },
+    { img: "https://i.hizliresim.com/qef3sie.png?_gl=1*1rmqpvx*_ga*MzQzNjc2MzQ2LjE3MzY2ODI2MDc.*_ga_M9ZRXYS2YN*MTczNjY4MjYwNi4xLjEuMTczNjY4Mjg2MS4yNy4wLjA.", title: "Understanding JavaScript Closures", date: "2023", category: "Programming", text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint." },
+    { img: "https://i.hizliresim.com/qef3sie.png?_gl=1*1rmqpvx*_ga*MzQzNjc2MzQ2LjE3MzY2ODI2MDc.*_ga_M9ZRXYS2YN*MTczNjY4MjYwNi4xLjEuMTczNjY4Mjg2MS4yNy4wLjA.", title: "Introduction to GraphQL", date: "2020", category: "Backend", text: "Velit officia consequat duis enim velit mollit." },
+    { img: "https://i.hizliresim.com/qef3sie.png?_gl=1*1rmqpvx*_ga*MzQzNjc2MzQ2LjE3MzY2ODI2MDc.*_ga_M9ZRXYS2YN*MTczNjY4MjYwNi4xLjEuMTczNjY4Mjg2MS4yNy4wLjA." , title: "CSS Grid vs Flexbox", date: "2021", category: "Design", text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint." },
   ];
 
   const pageNumbers = Math.ceil(works.length / worksPerPage);
