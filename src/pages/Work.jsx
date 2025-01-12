@@ -6,11 +6,11 @@ export default function Work() {
   const worksPerPage = 4;
 
   const works = [
-    { img: "src/assets/rec.png", title: "Making a design system from scratch", date: "2020", category: "Design , Pattern", text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint." },
-    { img: "src/assets/rec-2.png", title: "Building a web app with React", date: "2021", category: "Web Development", text: "Velit officia consequat duis enim velit mollit." },
-    { img: "src/assets/rec-3.png", title: "UI/UX Design Trends", date: "2022", category: "Design", text: "Exercitation veniam consequat sunt nostrud amet." },
-    { img: "src/assets/rec-4.png", title: "Understanding JavaScript Closures", date: "2023", category: "Programming", text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint." },
-    { img: "src/assets/rec-4.png", title: "Introduction to GraphQL", date: "2020", category: "Backend", text: "Velit officia consequat duis enim velit mollit." },
+    { img: "/rec.png", title: "Making a design system from scratch", date: "2020", category: "Design , Pattern", text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint." },
+    { img: "/rec-2.png", title: "Building a web app with React", date: "2021", category: "Web Development", text: "Velit officia consequat duis enim velit mollit." },
+    { img: "/rec-3.png", title: "UI/UX Design Trends", date: "2022", category: "Design", text: "Exercitation veniam consequat sunt nostrud amet." },
+    { img: "/rec-4.png", title: "Understanding JavaScript Closures", date: "2023", category: "Programming", text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint." },
+    { img: "/rec-4.png", title: "Introduction to GraphQL", date: "2020", category: "Backend", text: "Velit officia consequat duis enim velit mollit." },
     { title: "CSS Grid vs Flexbox", date: "2021", category: "Design", text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint." },
   ];
 

@@ -37,7 +37,7 @@ export default function Home() {
             Download Resume
           </button>
         </div>
-        <img src="/src/assets/profil.png" />
+        <img src="/profil.png" />
       </section>
 
       <section id='Recent_posts' className='py-6' style={{ background: "#EDF7FA" }}>
@@ -89,10 +89,10 @@ export default function Home() {
         <div className='flex flex-col gap-8'>
           <h3 className='text-dark font-normal text-2xl'>Featured works</h3>
           <div className='flex flex-col gap-8 px-2 lg:px-0'>
-            <WorksCard img={"src/assets/rec.png"} title={"Making a design system from scratch"} text={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint."} date={"2020"} category={"Design, Pattern"} />
-            <WorksCard img={"src/assets/rec-2.png"} title={"Making a design system from scratch"} text={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint."} date={"2020"} category={"Design, Pattern"} />
-            <WorksCard img={"src/assets/rec-3.png"} title={"Making a design system from scratch"} text={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint."} date={"2020"} category={"Design, Pattern"} />
-            <WorksCard img={"src/assets/rec-4.png"} title={"Making a design system from scratch"} text={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint."} date={"2020"} category={"Design, Pattern"} />
+            <WorksCard img={"/rec.png"} title={"Making a design system from scratch"} text={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint."} date={"2020"} category={"Design, Pattern"} />
+            <WorksCard img={"/rec-2.png"} title={"Making a design system from scratch"} text={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint."} date={"2020"} category={"Design, Pattern"} />
+            <WorksCard img={"/rec-3.png"} title={"Making a design system from scratch"} text={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint."} date={"2020"} category={"Design, Pattern"} />
+            <WorksCard img={"/rec-4.png"} title={"Making a design system from scratch"} text={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint."} date={"2020"} category={"Design, Pattern"} />
           </div>
         </div>
       </section>

@@ -14,12 +14,12 @@ export default function BlogArticle() {
         <p className="blog-body-text">
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
         </p>
-        <img src="/src/assets/blog-rec-2.png" />
+        <img src="/blog-rec-2.png" />
         <h2 className='headling-1'>Heading 1</h2>
         <h3 className='headling-2'>Heading 2</h3>
         <p className="blog-body-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-        <img className='img' src="/src/assets/blog-rec-1.png" />
-        <img className='img' src="/src/assets/blog-rec-3.png" />
+        <img className='img' src="/blog-rec-1.png" />
+        <img className='img' src="/blog-rec-3.png" />
       </div>
 
 
