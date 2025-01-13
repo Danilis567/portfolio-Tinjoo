@@ -1,46 +1,54 @@
 import React, { useState } from 'react'
-import PostCard from '../components/PostCard'
-
-export default function Blog() {
+import WorksCard from "../components/WorksCard"
+import { AnimatePresence, motion } from "framer-motion";
+export default function Work() {
   const [currentPage, setCurrentPage] = useState(1);
-  const postsPerPage = 4; 
+  const worksPerPage = 4;
 
-  const posts = [
-    { title: "UI Interactions of the week", text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.", date: "12 Feb 2020", category: "Design , Pattern" },
-    { title: "UI Design Principles", text: "Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.", date: "14 Feb 2020", category: "Design , Pattern" },
-    { title: "Building Accessible Websites", text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.", date: "16 Feb 2020", category: "Web Development" },
-    { title: "Modern CSS Layouts", text: "Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.", date: "18 Feb 2020", category: "Design , Pattern" },
-    { title: "JavaScript for Beginners", text: "Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.", date: "20 Feb 2020", category: "Programming" },
-    { title: "Web Performance Optimization", text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.", date: "22 Feb 2020", category: "Web Development" },
-    { title: "Web Performance Optimization", text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.", date: "22 Feb 2020", category: "Web Development" },
-    { title: "Web Performance Optimization", text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.", date: "22 Feb 2020", category: "Web Development" },
-
+  const works = [
+    { img: "https://i.hizliresim.com/qef3sie.png?_gl=1*1rmqpvx*_ga*MzQzNjc2MzQ2LjE3MzY2ODI2MDc.*_ga_M9ZRXYS2YN*MTczNjY4MjYwNi4xLjEuMTczNjY4Mjg2MS4yNy4wLjA.", title: "Making a design system from scratch", date: "2020", category: "Design , Pattern", text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint." },
+    { img: "https://i.hizliresim.com/qef3sie.png?_gl=1*1rmqpvx*_ga*MzQzNjc2MzQ2LjE3MzY2ODI2MDc.*_ga_M9ZRXYS2YN*MTczNjY4MjYwNi4xLjEuMTczNjY4Mjg2MS4yNy4wLjA.", title: "Building a web app with React", date: "2021", category: "Web Development", text: "Velit officia consequat duis enim velit mollit." },
+    { img: "https://i.hizliresim.com/qef3sie.png?_gl=1*1rmqpvx*_ga*MzQzNjc2MzQ2LjE3MzY2ODI2MDc.*_ga_M9ZRXYS2YN*MTczNjY4MjYwNi4xLjEuMTczNjY4Mjg2MS4yNy4wLjA.", title: "UI/UX Design Trends", date: "2022", category: "Design", text: "Exercitation veniam consequat sunt nostrud amet." },
+    { img: "https://i.hizliresim.com/qef3sie.png?_gl=1*1rmqpvx*_ga*MzQzNjc2MzQ2LjE3MzY2ODI2MDc.*_ga_M9ZRXYS2YN*MTczNjY4MjYwNi4xLjEuMTczNjY4Mjg2MS4yNy4wLjA.", title: "Understanding JavaScript Closures", date: "2023", category: "Programming", text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint." },
+    { img: "https://i.hizliresim.com/qef3sie.png?_gl=1*1rmqpvx*_ga*MzQzNjc2MzQ2LjE3MzY2ODI2MDc.*_ga_M9ZRXYS2YN*MTczNjY4MjYwNi4xLjEuMTczNjY4Mjg2MS4yNy4wLjA.", title: "Introduction to GraphQL", date: "2020", category: "Backend", text: "Velit officia consequat duis enim velit mollit." },
+    { img: "https://i.hizliresim.com/qef3sie.png?_gl=1*1rmqpvx*_ga*MzQzNjc2MzQ2LjE3MzY2ODI2MDc.*_ga_M9ZRXYS2YN*MTczNjY4MjYwNi4xLjEuMTczNjY4Mjg2MS4yNy4wLjA." , title: "CSS Grid vs Flexbox", date: "2021", category: "Design", text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint." },
   ];
 
-  const pageNumbers = Math.ceil(posts.length / postsPerPage);
-  const currentPosts = posts.slice((currentPage - 1) * postsPerPage, currentPage * postsPerPage);
+  const pageNumbers = Math.ceil(works.length / worksPerPage);
+  const currentWorks = works.slice((currentPage - 1) * worksPerPage, currentPage * worksPerPage);
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
+  const pageTransition = {
+    initial: { opacity: 0 },
+    animate: { opacity: 1 },
+    exit: { opacity: 0 },
+    transition: { duration: 0.25 },
+  };
   return (
-    <div className="flex flex-col gap-10 my-20 mx-auto max-w-[944px] px-4">
-      <h2 className="font-bold text-5xl text-dark">Blog</h2>
-      
-      {currentPosts.map((post, index) => (
-        <PostCard
-          key={index}
-          title={post.title}
-          text={post.text}
-          date={post.date}
-          category={post.category}
-        />
-      ))}
+    <div className='flex flex-col gap-10 my-20 mx-auto max-w-[944px] px-4'>
+      <h2 className='font-bold text-5xl text-dark'>Works</h2>
 
+      <div className='flex flex-col gap-8'>
+        {currentWorks.map((work, index) => (
+          <WorksCard
+            key={index}
+            img={work.img ?? "src/assets/rec.png"}
+            title={work.title}
+            text={work.text}
+            date={work.date}
+            category={work.category}
+          />
+        ))}
+      </div>
+
+      
       <div className='flex justify-center mt-4'>
+      
         <ul className='flex gap-3'>
           {currentPage > 1 && (
             <li>
-              <button onClick={() => paginate(currentPage - 1)} className='px-4 py-2  rounded text-white bg-primary'>
+              <button onClick={() => paginate(currentPage - 1)} className='px-4 py-2 rounded text-white bg-primary'>
                 Prev
               </button>
             </li>
@@ -49,7 +57,7 @@ export default function Blog() {
             <li key={index}>
               <button
                 onClick={() => paginate(index + 1)}
-                className={`px-4 py-2 border rounded ${currentPage === index + 1 ? 'text-white bg-primary' : ''}`}
+                className={`px-4 py-2 border rounded ${currentPage === index + 1 ? 'rounded text-white bg-primary' : ''}`}
               >
                 {index + 1}
               </button>
@@ -57,7 +65,7 @@ export default function Blog() {
           ))}
           {currentPage < pageNumbers && (
             <li>
-              <button onClick={() => paginate(currentPage + 1)} className='px-4 py-2  rounded text-white bg-primary'>
+              <button onClick={() => paginate(currentPage + 1)} className='px-4 py-2 rounded text-white bg-primary'>
                 Next
               </button>
             </li>
