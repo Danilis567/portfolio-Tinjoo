@@ -19,7 +19,7 @@ export default function BlogArticle() {
         <h3 className='headling-2'>Heading 2</h3>
         <p className="blog-body-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
         <img className='img' src="https://i.hizliresim.com/7160wyu.png?_gl=1*15fhoqb*_ga*MzQzNjc2MzQ2LjE3MzY2ODI2MDc.*_ga_M9ZRXYS2YN*MTczNjY4MjYwNi4xLjEuMTczNjY4Mjk4OS42MC4wLjA." />
-        <img className='img' src="https://i.hizliresim.com/fa1gzuj.png?_gl=1*6qglpa*_ga*MzQzNjc2MzQ2LjE3MzY2ODI2MDc.*_ga_M9ZRXYS2YN*MTczNjY4MjYwNi4xLjEuMTczNjY4MzAxNy4zMi4wLjA." />
+        <img className='img' src="/assets/blog-rec-2.png" />
       </div>
 
 
