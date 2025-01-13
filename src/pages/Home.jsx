@@ -37,7 +37,7 @@ export default function Home() {
             Download Resume
           </button>
         </div>
-        <img src="https://i.hizliresim.com/kqk9uaw.png?_gl=1*1igybar*_ga*MzQzNjc2MzQ2LjE3MzY2ODI2MDc.*_ga_M9ZRXYS2YN*MTczNjY4MjYwNi4xLjEuMTczNjY4MjgyOC42MC4wLjA." />
+        <img src="/assets/profil.png" />
       </section>
 
       <section id='Recent_posts' className='py-6' style={{ background: "#EDF7FA" }}>
@@ -89,10 +89,10 @@ export default function Home() {
         <div className='flex flex-col gap-8'>
           <h3 className='text-dark font-normal text-2xl'>Featured works</h3>
           <div className='flex flex-col gap-8 px-2 lg:px-0'>
-            <WorksCard img={"https://i.hizliresim.com/qef3sie.png?_gl=1*1rmqpvx*_ga*MzQzNjc2MzQ2LjE3MzY2ODI2MDc.*_ga_M9ZRXYS2YN*MTczNjY4MjYwNi4xLjEuMTczNjY4Mjg2MS4yNy4wLjA."} title={"Making a design system from scratch"} text={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint."} date={"2020"} category={"Design, Pattern"} />
-            <WorksCard img={"https://i.hizliresim.com/qef3sie.png?_gl=1*1rmqpvx*_ga*MzQzNjc2MzQ2LjE3MzY2ODI2MDc.*_ga_M9ZRXYS2YN*MTczNjY4MjYwNi4xLjEuMTczNjY4Mjg2MS4yNy4wLjA."} title={"Making a design system from scratch"} text={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint."} date={"2020"} category={"Design, Pattern"} />
-            <WorksCard img={"https://i.hizliresim.com/qef3sie.png?_gl=1*1rmqpvx*_ga*MzQzNjc2MzQ2LjE3MzY2ODI2MDc.*_ga_M9ZRXYS2YN*MTczNjY4MjYwNi4xLjEuMTczNjY4Mjg2MS4yNy4wLjA."} title={"Making a design system from scratch"} text={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint."} date={"2020"} category={"Design, Pattern"} />
-            <WorksCard img={"https://i.hizliresim.com/qef3sie.png?_gl=1*1rmqpvx*_ga*MzQzNjc2MzQ2LjE3MzY2ODI2MDc.*_ga_M9ZRXYS2YN*MTczNjY4MjYwNi4xLjEuMTczNjY4Mjg2MS4yNy4wLjA."} title={"Making a design system from scratch"} text={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint."} date={"2020"} category={"Design, Pattern"} />
+            <WorksCard img={"/assets/rec.png"} title={"Making a design system from scratch"} text={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint."} date={"2020"} category={"Design, Pattern"} />
+            <WorksCard img={"/assets/rec-2.png"} title={"Making a design system from scratch"} text={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint."} date={"2020"} category={"Design, Pattern"} />
+            <WorksCard img={"/assets/rec-3.png"} title={"Making a design system from scratch"} text={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint."} date={"2020"} category={"Design, Pattern"} />
+            <WorksCard img={"/assets/rec-5.png"} title={"Making a design system from scratch"} text={"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint."} date={"2020"} category={"Design, Pattern"} />
           </div>
         </div>
       </section>
