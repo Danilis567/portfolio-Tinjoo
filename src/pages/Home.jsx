@@ -34,9 +34,9 @@ export default function Home() {
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
           </p>
           <button className='custom-btn w-full mx-auto md:w-auto md:mx-0'  >
-            <Link to="/files/sunum.pptx" target='_blank'>
-              Download Resume
-            </Link>
+
+            Download Resume
+
 
           </button>
         </div>
