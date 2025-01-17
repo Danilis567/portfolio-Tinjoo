@@ -1,21 +1,15 @@
 const express = require('express');
 const { createYoga } = require('graphql-yoga');
-const { GraphQLSchema, GraphQLObjectType, GraphQLString } = require('graphql');
+const { makeExecutableSchema } = require('@graphql-tools/schema');
+const typeDefs = require('./src/graphql/schema'); 
+const resolvers = require('./src/graphql/resolvers'); 
 
-const schema = new GraphQLSchema({
-  query: new GraphQLObjectType({
-    name: 'RootQueryType',
-    fields: {
-      hello: {
-        type: GraphQLString,
-        resolve: () => 'Hello, kedim benim!',
-      },
-    },
-  }),
+const schema = makeExecutableSchema({
+  typeDefs,
+  resolvers,
 });
 
 const app = express();
-
 
 const yoga = createYoga({
   schema,
